@@ -1,14 +1,8 @@
 function y = flocmax(x)
-% y = flocmax(x)
-%
-% Find the local maxima of a vector using a three point neighborhood.
-%
-% In:
-%  x    vector
-%
-% Out:
-%  y    binary vector with maxima of x marked as ones
-%
+%FLOCMAX Local maxima of a vector.
+%   Y = FLOCMAX(X) find the local maxima of a vector X using a three point
+%   neighborhood. Y is a binary vector with maxima of X marked as ones.
+
 %% Copyright (C) 2004-2013 Antti Niemistö
 %%
 %% This file is part of HistThresh toolbox.

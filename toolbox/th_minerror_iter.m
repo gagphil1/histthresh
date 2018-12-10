@@ -1,24 +1,18 @@
 function T = th_minerror_iter(I,n)
-% T =  th_minerror_iter(I,n)
+%TH_MINERROR_ITER Global image threshold using the iterative minimum error method.
+%   T = TH_MINERROR_ITER(I) find a global threshold T for an intensity
+%   image I using the iterative minimum error thresholding method.
 %
-% Find a global threshold for a grayscale image using the iterative minimum
-% error thresholding method.
+%   TH_MINERROR_ITER(I,N) use N as maximum graylevel (defaults to 255).
 %
-% In:
-%  I    grayscale image
-%  n    maximum graylevel (defaults to 255)
+%   References: 
 %
-% Out:
-%  T    threshold
+%   J. Kittler and J. Illingworth, "Minimum error thresholding," Pattern
+%   Recognition, vol. 19, pp. 41-47, 1986.
 %
-% References: 
-%
-% J. Kittler and J. Illingworth, "Minimum error thresholding," Pattern
-% Recognition, vol. 19, pp. 41-47, 1986.
-%
-% C. A. Glasbey, "An analysis of histogram-based thresholding algorithms,"
-% CVGIP: Graphical Models and Image Processing, vol. 55, pp. 532-537, 1993.
-%
+%   C. A. Glasbey, "An analysis of histogram-based thresholding algorithms,"
+%   CVGIP: Graphical Models and Image Processing, vol. 55, pp. 532-537, 1993.
+
 %% Copyright (C) 2004-2013 Antti Niemistö
 %%
 %% This file is part of HistThresh toolbox.

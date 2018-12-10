@@ -1,20 +1,13 @@
 function H = hconvhull(h)
-% H = hconvhull(h)
+%HCONVHULL Convex hull of a histogram.
+%   U = HCONVHULL(H) returns the convex hull of the histogram H.
 %
-% Find the convex hull of a histogram.
+%   References: 
 %
-% In:
-%  h    histogram
-%
-% Out:
-%  H    convex hull of histogram
-%
-% References: 
-%
-% A. Rosenfeld and P. De La Torre, "Histogram concavity analysis as an aid
-% in threhold selection," IEEE Transactions on Systems, Man, and
-% Cybernetics, vol. 13, pp. 231-235, 1983.
-%
+%   A. Rosenfeld and P. De La Torre, "Histogram concavity analysis as an aid
+%   in threhold selection," IEEE Transactions on Systems, Man, and
+%   Cybernetics, vol. 13, pp. 231-235, 1983.
+
 %% Copyright (C) 2004-2013 Antti Niemistö
 %%
 %% This file is part of HistThresh toolbox.

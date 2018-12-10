@@ -1,24 +1,18 @@
 function T = th_moments(I,n)
-% T =  th_moments(I,n)
+%TH_MOMENTS Global image threshold based on moment preserving thresholding method.
+%   T = TH_MOMENTS(I) find a global threshold T for an intensity image I
+%   using moment preserving thresholding method.
 %
-% Find a global threshold for a grayscale image using moment preserving
-% thresholding method.
+%   TH_MOMENTS(I,N) use N as maximum graylevel (defaults to 255).
 %
-% In:
-%  I    grayscale image
-%  n    maximum graylevel (defaults to 255)
+%   References: 
 %
-% Out:
-%  T    threshold
+%   W. Tsai, "Moment-preserving thresholding: a new approach," Computer
+%   Vision, Graphics, and Image Processing, vol. 29, pp. 377-393, 1985.
 %
-% References: 
-%
-% W. Tsai, "Moment-preserving thresholding: a new approach," Computer
-% Vision, Graphics, and Image Processing, vol. 29, pp. 377-393, 1985.
-%
-% C. A. Glasbey, "An analysis of histogram-based thresholding algorithms,"
-% CVGIP: Graphical Models and Image Processing, vol. 55, pp. 532-537, 1993.
-%
+%   C. A. Glasbey, "An analysis of histogram-based thresholding algorithms,"
+%  CVGIP: Graphical Models and Image Processing, vol. 55, pp. 532-537, 1993.
+
 %% Copyright (C) 2004-2013 Antti Niemistö
 %%
 %% This file is part of HistThresh toolbox.

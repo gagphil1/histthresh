@@ -1,25 +1,20 @@
 function T = th_median(I,n)
-% T =  th_median(I,n)
+%TH_MEDIAN Global image threshold using the median of the pixels.
+%   T = TH_MEDIAN(I,N) find a global threshold T for an intensity image I
+%   by assuming that half of the pixels belong to the background and half
+%   to the foreground.
 %
-% Find a global threshold for a grayscale image by assuming that half of the
-% pixels belong to the background and half to the foreground.
+%   TH_MEDIAN(I,N) use N as maximum graylevel (defaults to 255).
 %
-% In:
-%  I    grayscale image
-%  n    maximum graylevel (defaults to 255)
+%   References: 
 %
-% Out:
-%  T    threshold
+%   W. Doyle, "Operation useful for similarity-invariant pattern recognition,"
+%   Journal of the Association for Computing Machinery, vol. 9,pp. 259-267,
+%   1962.
 %
-% References: 
-%
-% W. Doyle, "Operation useful for similarity-invariant pattern recognition,"
-% Journal of the Association for Computing Machinery, vol. 9,pp. 259-267,
-% 1962.
-%
-% C. A. Glasbey, "An analysis of histogram-based thresholding algorithms,"
-% CVGIP: Graphical Models and Image Processing, vol. 55, pp. 532-537, 1993.
-%
+%   C. A. Glasbey, "An analysis of histogram-based thresholding algorithms,"
+%   CVGIP: Graphical Models and Image Processing, vol. 55, pp. 532-537, 1993.
+
 %% Copyright (C) 2004-2013 Antti Niemistö
 %%
 %% This file is part of HistThresh toolbox.

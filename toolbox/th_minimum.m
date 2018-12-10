@@ -1,25 +1,19 @@
-function T = th_minimum(I,n);
-% T =  th_minimum(I,n)
+function T = th_minimum(I,n)
+%TH_MINIMUM Global image threshold using the valley of the bimodal histogram.
+%   T = TH_MINIMUM(I,N) find a global threshold T for an intensity image I
+%   by choosing the threshold to be in the valley of the bimodal histogram.
+%   The method is also known as the mode method.
 %
-% Find a global threshold for a grayscale image by choosing the threshold to
-% be in the valley of the bimodal histogram. The method is also known as
-% the mode method.
+%   TH_MINIMUM(I,N) use N as maximum graylevel (defaults to 255).
 %
-% In:
-%  I    grayscale image
-%  n    maximum graylevel (defaults to 255)
+%   References: 
 %
-% Out:
-%  T    threshold
+%   J. M. S. Prewitt and M. L. Mendelsohn, "The analysis of cell images," in
+%   Annals of the New York Academy of Sciences, vol. 128, pp. 1035-1053, 1966.
 %
-% References: 
-%
-% J. M. S. Prewitt and M. L. Mendelsohn, "The analysis of cell images," in
-% Annals of the New York Academy of Sciences, vol. 128, pp. 1035-1053, 1966.
-%
-% C. A. Glasbey, "An analysis of histogram-based thresholding algorithms,"
-% CVGIP: Graphical Models and Image Processing, vol. 55, pp. 532-537, 1993.
-%
+%   C. A. Glasbey, "An analysis of histogram-based thresholding algorithms,"
+%   CVGIP: Graphical Models and Image Processing, vol. 55, pp. 532-537, 1993.
+
 %% Copyright (C) 2004-2013 Antti Niemistö
 %%
 %% This file is part of HistThresh toolbox.

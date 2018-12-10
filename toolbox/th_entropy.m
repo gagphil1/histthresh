@@ -1,25 +1,19 @@
 function T = th_entropy(I,n)
-% T =  th_intermeans(I,n)
+%TH_ENTROPY Global image threshold based on the histogram enthropy.
+%   T = TH_ENTROPY(I) find a global threshold T for an intensity image I
+%   using the method based on the entropy of the image histogram.
 %
-% Find a global threshold for a grayscale image using the method based on
-% the entropy of the image histogram.
+%   TH_ENTROPY(I, N) use N as maximum graylevel (defaults to 255).
 %
-% In:
-%  I    grayscale image
-%  n    maximum graylevel (defaults to 255)
+%   References: 
 %
-% Out:
-%  T    threshold
+%   J. N. Kapur, P. K. Sahoo, and A. K. C. Wong, "A new method for gray-level
+%   picture thresholding using the entropy of the histogram," Computer Vision,
+%   Graphics, and Image Processing, vol. 29, pp. 273-285, 1985.
 %
-% References: 
-%
-% J. N. Kapur, P. K. Sahoo, and A. K. C. Wong, "A new method for gray-level
-% picture thresholding using the entropy of the histogram," Computer Vision,
-% Graphics, and Image Processing, vol. 29, pp. 273-285, 1985.
-%
-% C. A. Glasbey, "An analysis of histogram-based thresholding algorithms,"
-% CVGIP: Graphical Models and Image Processing, vol. 55, pp. 532-537, 1993.
-%
+%   C. A. Glasbey, "An analysis of histogram-based thresholding algorithms,"
+%   CVGIP: Graphical Models and Image Processing, vol. 55, pp. 532-537, 1993.
+
 %% Copyright (C) 2004-2013 Antti Niemistö
 %%
 %% This file is part of HistThresh toolbox.

@@ -1,25 +1,25 @@
 function T = th_ptile(I,p,n)
-% T =  th_ptile(I,p,n)
+%TH_PTILE Global image threshold based on the p-tile method.
+%   T = TH_PTILE(I,P,N) find a global threshold for a grayscale image by
+%   using the p-tile method.
 %
-% Find a global threshold for a grayscale image by using the p-tile method.
+%   In:
+%      I    grayscale image
+%      P    fraction of foreground pixels (defaults to 0.5)
+%      N    maximum graylevel (defaults to 255)
 %
-% In:
-%  I    grayscale image
-%  p    fraction of foreground pixels (defaults to 0.5)
-%  n    maximum graylevel (defaults to 255)
+%   Out:
+%      T    threshold
 %
-% Out:
-%  T    threshold
+%   References: 
 %
-% References: 
+%   W. Doyle, "Operation useful for similarity-invariant pattern recognition,"
+%   Journal of the Association for Computing Machinery, vol. 9,pp. 259-267,
+%   1962.
 %
-% W. Doyle, "Operation useful for similarity-invariant pattern recognition,"
-% Journal of the Association for Computing Machinery, vol. 9,pp. 259-267,
-% 1962.
-%
-% C. A. Glasbey, "An analysis of histogram-based thresholding algorithms,"
-% CVGIP: Graphical Models and Image Processing, vol. 55, pp. 532-537, 1993.
-%
+%   C. A. Glasbey, "An analysis of histogram-based thresholding algorithms,"
+%   CVGIP: Graphical Models and Image Processing, vol. 55, pp. 532-537, 1993.
+
 %% Copyright (C) 2004-2013 Antti Niemistö
 %%
 %% This file is part of HistThresh toolbox.

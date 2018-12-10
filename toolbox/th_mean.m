@@ -1,21 +1,15 @@
 function T = th_mean(I,n)
-% T =  th_mean(I,n)
+%TH_MEAN Global image threshold using the mean of the pixels.
+%   T = TH_MEAN(I) find a global threshold T for an intensity image I by
+%   finding the mean of the pixels in the image.
 %
-% Find a global threshold for a grayscale image by finding the mean of the
-% pixels in the image.
+%   TH_MEAN(I, N) use N as maximum graylevel (defaults to 255).
 %
-% In:
-%  I    grayscale image
-%  n    maximum graylevel (defaults to 255)
+%   References: 
 %
-% Out:
-%  T    threshold
-%
-% References: 
-%
-% C. A. Glasbey, "An analysis of histogram-based thresholding algorithms,"
-% CVGIP: Graphical Models and Image Processing, vol. 55, pp. 532-537, 1993.
-%
+%   C. A. Glasbey, "An analysis of histogram-based thresholding algorithms,"
+%   CVGIP: Graphical Models and Image Processing, vol. 55, pp. 532-537, 1993.
+
 %% Copyright (C) 2004-2013 Antti Niemistö
 %%
 %% This file is part of HistThresh toolbox.

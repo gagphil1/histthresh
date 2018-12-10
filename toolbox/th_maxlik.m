@@ -1,25 +1,19 @@
 function T = th_maxlik(I,n)
-% T =  th_maxlik(I,n)
+%TH_MAXLIK Global image threshold using maximum likelihood.
+%   T = TH_MAXLIK(I) find a global threshold T for an intensity image I
+%   using the maximum likelihood via expectation maximization method.
 %
-% Find a global threshold for a grayscale image using the maximum likelihood
-% via expectation maximization method.
+%   TH_MAXLIK(I, N) use N as maximum graylevel (defaults to 255).
 %
-% In:
-%  I    grayscale image
-%  n    maximum graylevel (defaults to 255)
+%   References: 
 %
-% Out:
-%  T    threshold
+%   A. P. Dempster, N. M. Laird, and D. B. Rubin, "Maximum likelihood from
+%   incomplete data via the EM algorithm," Journal of the Royal Statistical
+%   Society, Series B, vol. 39, pp. 1-38, 1977.
 %
-% References: 
-%
-% A. P. Dempster, N. M. Laird, and D. B. Rubin, "Maximum likelihood from
-% incomplete data via the EM algorithm," Journal of the Royal Statistical
-% Society, Series B, vol. 39, pp. 1-38, 1977.
-%
-% C. A. Glasbey, "An analysis of histogram-based thresholding algorithms,"
-% CVGIP: Graphical Models and Image Processing, vol. 55, pp. 532-537, 1993.
-%
+%   C. A. Glasbey, "An analysis of histogram-based thresholding algorithms,"
+%   CVGIP: Graphical Models and Image Processing, vol. 55, pp. 532-537, 1993.
+
 %% Copyright (C) 2004-2013 Antti Niemistö
 %%
 %% This file is part of HistThresh toolbox.

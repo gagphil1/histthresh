@@ -1,24 +1,18 @@
-function T = th_intermeans(I,n);
-% T =  th_intermeans(I,n)
+function T = th_intermeans(I,n)
+%TH_INTERMEANS Global image threshold using Otsu's method.
+%   T = TH_INTERMEANS(I) find a global threshold T for an intensity image I
+%   using the intermeans method commonly known as Otsu's method.
 %
-% Find a global threshold for a grayscale image using the intermeans method
-% commonly known as Otsu's method.
+%   TH_INTERMEANS(I, N) use N as maximum graylevel (defaults to 255).
 %
-% In:
-%  I    grayscale image
-%  n    maximum graylevel (defaults to 255)
+%   References: 
 %
-% Out:
-%  T    threshold
+%   N. Otsu, "A threshold selection method from gray-level histogram," IEEE
+%   Transactions on Systems, Man, and Cybernetics, vol. 9, pp. 62-66, 1979.
 %
-% References: 
-%
-% N. Otsu, "A threshold selection method from gray-level histogram," IEEE
-% Transactions on Systems, Man, and Cybernetics, vol. 9, pp. 62-66, 1979.
-%
-% C. A. Glasbey, "An analysis of histogram-based thresholding algorithms,"
-% CVGIP: Graphical Models and Image Processing, vol. 55, pp. 532-537, 1993.
-%
+%   C. A. Glasbey, "An analysis of histogram-based thresholding algorithms,"
+%   CVGIP: Graphical Models and Image Processing, vol. 55, pp. 532-537, 1993.
+
 %% Copyright (C) 2004-2013 Antti Niemistö
 %%
 %% This file is part of HistThresh toolbox.

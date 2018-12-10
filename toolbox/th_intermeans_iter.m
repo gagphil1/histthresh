@@ -1,26 +1,20 @@
 function T = th_intermeans_iter(I,n)
-% T =  th_intermeans_iter(I,n)
+%TH_INTERMEANS_ITER Global image threshold using the iterative intermeans method.
+%   T = TH_INTERMEANS_ITER(I) find a global threshold (T) for an intensity
+%   image I using the iterative intermeans method.
 %
-% Find a global threshold for a grayscale image using the iterative
-% intermeans method.
+%   TH_INTERMEANS_ITER(I, N) use N as maximum graylevel (defaults to 255).
 %
-% In:
-%  I    grayscale image
-%  n    maximum graylevel (defaults to 255)
+%   References: 
 %
-% Out:
-%  T    threshold
+%   T. Ridler and S. Calvard, "Picture thresholding using an iterative
+%   selection method," IEEE Transactions on Systems, Man, and Cybernetics,
+%   vol. 8, pp. 630-632, 1978.
 %
-% References: 
-%
-% T. Ridler and S. Calvard, "Picture thresholding using an iterative
-% selection method," IEEE Transactions on Systems, Man, and Cybernetics,
-% vol. 8, pp. 630-632, 1978.
-%
-% H. J. Trussell, "Comments on 'Picture thresholding using an iterative
-% selection method'," IEEE Transactions on Systems, Man, and Cybernetics,
-% vol. 9, p. 311, 1979.
-%
+%   H. J. Trussell, "Comments on 'Picture thresholding using an iterative
+%   selection method'," IEEE Transactions on Systems, Man, and Cybernetics,
+%   vol. 9, p. 311, 1979.
+
 % C. A. Glasbey, "An analysis of histogram-based thresholding algorithms,"
 % CVGIP: Graphical Models and Image Processing, vol. 55, pp. 532-537, 1993.
 %

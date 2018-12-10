@@ -1,14 +1,8 @@
 function b = bimodtest(y)
-% b = bimodtest(y)
-%
-% Test if a histogram is bimodal.
-%
-% In:
-%  y    histogram
-%
-% Out:
-%  b    true if histogram is bimodal, false otherwise
-%
+%BIMODTEST Test if a histogram is bimodal.
+%   B = BIMODTEST(Y) returns true if histogram Y is bimodal, false
+%   otherwise.
+
 %% Copyright (C) 2004-2013 Antti Niemistö
 %%
 %% This file is part of HistThresh toolbox.

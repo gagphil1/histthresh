@@ -1,26 +1,20 @@
-function T = th_concavity(I,n);
-% T =  th_concavity(I,n)
+function T = th_concavity(I,n)
+%TH_CONCAVITY Global image threshold based on the histogram shoulder.
+%   T = TH_CONCAVITY(I) find a global threshold T for an intensity image I
+%   by choosing the threshold to be in the shoulder of the histogram.
 %
-% Find a global threshold for a grayscale image by choosing the threshold to
-% be in the shoulder of the histogram.
+%   TH_CONCAVITY(I, N) use N as a maximum graylevel (defaults to 255).
 %
-% In:
-%  I    grayscale image
-%  n    maximum graylevel (defaults to 255)
+%   References: 
 %
-% Out:
-%  T    threshold
+%   A. Rosenfeld and P. De La Torre, "Histogram concavity analysis as an aid
+%   in threshold selection," IEEE Transactions on Systems, Man, and
+%   Cybernetics, vol. 13, pp. 231-235, 1983.
 %
-% References: 
-%
-% A. Rosenfeld and P. De La Torre, "Histogram concavity analysis as an aid
-% in threshold selection," IEEE Transactions on Systems, Man, and
-% Cybernetics, vol. 13, pp. 231-235, 1983.
-%
-% P. K. Sahoo, S. Soltani, and A. K. C. Wong, "A survey of thresholding
-% techniques," Computer Vision, Graphics, and Image Processing, vol. 41,
-% pp. 233-260, 1988.
-%
+%   P. K. Sahoo, S. Soltani, and A. K. C. Wong, "A survey of thresholding
+%   techniques," Computer Vision, Graphics, and Image Processing, vol. 41,
+%   pp. 233-260, 1988.
+
 %% Copyright (C) 2004-2013 Antti Niemistö
 %%
 %% This file is part of HistThresh toolbox.
